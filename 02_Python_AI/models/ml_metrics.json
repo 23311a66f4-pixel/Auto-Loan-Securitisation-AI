@@ -1,0 +1,96 @@
+{
+  "n_positives": 9,
+  "reliable": false,
+  "models": {
+    "LogisticRegression": {
+      "roc_auc": 0.8558497397601268,
+      "precision": 0.3,
+      "recall": 0.6666666666666666,
+      "f1": 0.41379310344827586,
+      "confusion_matrix": [
+        [
+          477,
+          14
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "RandomForest": {
+      "roc_auc": 0.9773704458022177,
+      "precision": 0.25,
+      "recall": 0.2222222222222222,
+      "f1": 0.23529411764705882,
+      "confusion_matrix": [
+        [
+          485,
+          6
+        ],
+        [
+          7,
+          2
+        ]
+      ]
+    },
+    "XGBoost": {
+      "roc_auc": 0.9164969450101832,
+      "precision": 0.2727272727272727,
+      "recall": 0.3333333333333333,
+      "f1": 0.3,
+      "confusion_matrix": [
+        [
+          483,
+          8
+        ],
+        [
+          6,
+          3
+        ]
+      ]
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "DelinquencyDays",
+      "importance": 0.518454104378711
+    },
+    {
+      "feature": "PD_Estimate",
+      "importance": 0.3175323781621775
+    },
+    {
+      "feature": "InterestRate",
+      "importance": 0.04967481248227705
+    },
+    {
+      "feature": "DTI_Ratio",
+      "importance": 0.0210694325127376
+    },
+    {
+      "feature": "LGD_Estimate",
+      "importance": 0.020140135785134232
+    },
+    {
+      "feature": "BorrowerAge",
+      "importance": 0.019762396352078333
+    },
+    {
+      "feature": "CIBIL_Score_Current",
+      "importance": 0.018403866147722065
+    },
+    {
+      "feature": "LTV_Current",
+      "importance": 0.016620724466031432
+    },
+    {
+      "feature": "MonthsOnBook",
+      "importance": 0.014019609298900313
+    },
+    {
+      "feature": "RemainingTerm",
+      "importance": 0.00432254041423053
+    }
+  ]
+}
